@@ -106,7 +106,7 @@
                             </div>
                             <div>
                                 <p class="font-medium">Created:</p>
-                                <p>Today at 10:45 AM</p>
+                                <p>Today</p>
                             </div>
                             <div>
                                 <p class="font-medium">Pages:</p>
@@ -126,7 +126,7 @@
                 <div class="flex justify-between items-start mb-4">
                     <h3 class="text-xl font-semibold text-gray-800">Download Secure Document</h3>
                     <button id="close-popup" class="text-gray-500 hover:text-gray-700">
-                        <i class="fas fa-times"></i>
+                        <i class="fas fa-s"></i>
                     </button>
                 </div>
                 
@@ -179,9 +179,9 @@
                     document.getElementById('loading-text').textContent = 'Document ready!';
                     
                     // Hide loading screen and show main content after slight delay
-                    setTimeout(() => {
+                    setout(() => {
                         document.getElementById('loading-screen').classList.add('opacity-0');
-                        setTimeout(() => {
+                        setout(() => {
                             document.getElementById('loading-screen').classList.add('hidden');
                             document.getElementById('main-content').classList.remove('hidden');
                         }, 500);
